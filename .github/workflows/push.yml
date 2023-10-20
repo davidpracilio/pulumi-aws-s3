@@ -8,10 +8,10 @@ jobs:
     name: Update
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version-file: package.json
+          node-version-file: 16
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
